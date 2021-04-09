@@ -4,35 +4,68 @@
 <meta charset="UTF-8">
 <title>유진</title>
 <link rel="stylesheet" type = "text/css" href="../../css/w3.css">
+<link rel="stylesheet" type = "text/css" href="../../css/user.css">
+<script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+	.div1{
+		margin-top : 50px;
+	}
+	
+	.bt{
+		margin : 10px;
+	}
+</style>
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#bt1').click(function(){
+			alert('정답은 전부!!!!!');
+		});
+		$('#bt2').click(function(){
+			alert('정답은 밀크티');
+		});
+		$('#bt3').click(function(){
+			alert('정답은 ISFP');
+		});
+	});
+	
+</script>
 </head>
 <body>
-	<h2 class ="w3-pink w3-center">유진 페이지</h2>
-	<div class = "w3-center">
+	<h1 class ="w3-pink w3-center w3-card-4">유진 페이지</h1>
+	<div class = "w3-center mgt20">
 		<h3 style = "Background-color : LightPink">나는 유진</h3><br>
 		<h3 style = "Background-color : MistyRose ">나는 24살</h3><br>
 		<h3 style = "Background-color : LavenderBlush "><a href="https://github.com/cr0ng/gitstart">내 git 페이지</a></h3>
-		<h1 stype ="background-color: LightPink">나를 알아맞춰보세요.</h1>
-		<h1 stype ="background-color: LightPink">내가 제일 많이 하는 말들을 골라보세요.</h1>
-		<label><input type="checkbox">아놔</label>
-		<label><input type="checkbox">집보내줘어~~~!!!</label>
-		<label><input type="checkbox">배고파ㅏㅏㅏㅏ</label>
-		<label><input type="checkbox">거지같다</label>
-		<label><input type="checkbox">몰라..</label>
-		<label><input type="checkbox">아놔</label>
-		<h2 stype ="background-color: LightPink">내가 마시는 음료는?</h2>
-		<label><input type="checkbox">커피</label>
-		<label><input type="checkbox">오렌지 주스</label>
-		<label><input type="checkbox">차</label>
-		<label><input type="checkbox">밀크티</label>
-		<h2 style = "Background-color : Snow ">나의 mbti는?</h2><br>
-		<label><input type="checkbox">ESFP</label>
-		<label><input type="checkbox">ISFP</label>
-		<label><input type="checkbox">INFP</label>
-		<label><input type="checkbox">ENFP</label>
-		
+	</div>
+	
+	<div class = " div1 mgt20 w3-center" style = "Background-color : snow">
+		<h2 class ="w3-card-4" style ="background-color: LightPink">나를 알아맞춰보세요.</h2>
+			<h4 style ="background-color: LightPink">내가 제일 많이 하는 말들을 골라보세요.</h4>
+			<label><input type="checkbox" name = "mal" value ="q11">아놔</label>
+			<label><input type="checkbox" name = "mal" value ="q12">집보내줘어~~~!!!</label>
+			<label><input type="checkbox" name = "mal" value ="q13">배고파ㅏㅏㅏㅏ</label>
+			<label><input type="checkbox" name = "mal" value ="q14">거지같다</label>
+			<label><input type="checkbox" name = "mal" value ="q15">몰라..</label></br>
+			<button type="button" class ="bt" id="bt1"><span>정답확인!</span></button>
+			
+			<h4 style ="background-color: LightPink">내가 마시는 음료는?</h4>
+			<label><input type="checkbox">커피</label>
+			<label><input type="checkbox">오렌지 주스</label>
+			<label><input type="checkbox">차</label>
+			<label><input type="checkbox">밀크티</label></br>
+			<button type="button" class ="bt" id="bt2"><span>정답확인!</span></button>
+			
+			<h4 style = "Background-color : LightPink ">나의 mbti는?</h4><br>
+			<label><input type="checkbox">ESFP</label>
+			<label><input type="checkbox">ISFP</label>
+			<label><input type="checkbox">INFP</label>
+			<label><input type="checkbox">ENFP</label></br>
+			<button type="button" class ="bt" id="bt3"><span>정답확인!</span></button>
+	</div>
 		
 		  
-	</div>
+	
 </body>
 </html>
 
