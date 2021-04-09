@@ -5,10 +5,32 @@
 <title>Insert title here</title>
 <link rel="stylesheet" type="text/css" href="../../css/w3.css">
 <link rel="stylesheet" type="text/css" href="../../css/user.css">
+<script type="text/javascript" src="../../js/jquery-3.6.0.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#ct').click(function(){
+			$('#my').delay(1000).slideToggle(300);
+		});
+
+	});
+</script>
+
 </head>
-<body>
-		<h3 style = "Background-color : Pink">최태현</h3><br>
+<body class= "w3-center">
+		<h3 style = "Background-color : Pink" id="ct" class= "w3-center">최태현 -click-</h3><br>
+		<div id="my">
 		<h1>최태현은 김밥일까 사람일까?</h1>
+		<h1 class="w3-green">로그인</h1>
+			<label>I D :
+			<input type="text" name="id" id="id" placeholder="아이디입력"><br>
+			</label>
+			<label>PW :
+			<input type="password" name="pw" id="pw" placeholder="비밀번호입력" calss="magin-top"><br>
+			</label>
+			
+			<h4 class="w3-button">cancel</h4>
+			<h4 class="w3-button">login</h4>
+		
 		<h1>음식들</h1>
 		<label>1위<input type="checkbox">제육볶음</label><br>
 		<label>2위<input type="checkbox">김밥</label><br>
@@ -22,10 +44,11 @@
 		<input type="radio" name="ages" value="twenties">아이스커피
 		<input type="radio" name="ages" value="thirties">평양냉면
 
-
-
 		<div>최태  현</div>
 		<div>점심은 김밥</div>
 		<div>css는 잘모르겠??음</div>
+		
+		</div>
+		
 </body>
 </html>
