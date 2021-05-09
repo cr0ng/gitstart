@@ -2,6 +2,9 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
+	<style type="text/css">
+		
+	</style>
 <head>
  <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -26,6 +29,7 @@
 	<link rel="stylesheet" href="assets/css/slick.css">
 	<link rel="stylesheet" href="assets/css/nice-select.css">
 	<link rel="stylesheet" href="assets/css/style.css">
+	
 </head>
 <body>
  <!-- ? Preloader Start -->
@@ -51,7 +55,7 @@
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="login.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
             <h2>회원가입</h2>
 
@@ -79,20 +83,22 @@
                 <label for="name">닉네임</label>
                 <input type="text" name="nickname" placeholder="닉네임">
             </div>
-            <div class="form-input">
+            <div class ="form-input">
             	<label for="name">성별</label><br>
-            </div>
-                <select name="gen">
-	                <option value="1">남성</option>
-	                <option value="2">여성</option>
+                <select name="gen"> 
+                	<option value="">성별</option>
+	                <option value="male">남성</option>
+	                <option value="female">여성</option>
                 </select>
-            <div class="form-input">
+                <hr style="padding-top : 25px">
+            </div>
+            <div class="form-input" >
                 <label for="name">나이</label>
                 <input type="text" name="age" placeholder="나이">
             </div>
-            <div class="form-input">
-                <label for="name">이미지</label>
-                <input type="file" name="upload" placeholder="파일찾기">
+            <div class="form-input" >
+                <label for="name">프로필 사진</label>
+                <input type="file" name="upload" style="height : 60px; padding-bottom: 10px" placeholder="파일찾기">
             </div>
             <div class="form-input pt-30">
                 <input type="submit" name="submit" value="회원가입">

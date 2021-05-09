@@ -29,24 +29,18 @@
     <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
 
 <style type="text/css">
-	.mydiv{
-		width : 1000px;
-		margin-top: 100px;
-		background-color : MediumSlateBlue;
+	.button{
+		  background-color: white;
+ 		  color: black;
+  		  border: 2px solid #E6E6FA;
+  		  width: 33%;
+  		  font-weight : bold;
+  		  font-size : 15pt;
+  		  color : grey;
 	}
 	
-	.adiv{
-		margin-left : 50px;
-		padding-top : 50px;
-	}
-	.vdiv{
-		text-algin : right;
-		font-size: 30px;
-	}
-	
-	.rdiv{
-		text-algin : right;
-		font-size: 30px;
+	.button:hover {
+		background-color: #E6E6FA;
 	}
 </style>
 </head>
@@ -114,36 +108,35 @@
                 </div>
             </div>
         </section>
-        <div class ="container" id= "frm" >
-        	<div class="mydiv">
-				<div class="adiv">
-					<label class="vdiv">이름 : </label>
-					<span class="rdiv" id="name">####</span>
+        <div class ="container" id= "frm" style="margin-top :50px; margin-bottom: 50px " >
+        	<form action="#">
+				<div class="mt-10">
+					<input type="text" name="name" placeholder="NAME : ###" readonly class="single-input">
 				</div>
-				<div class="adiv">
-					<label  class="vdiv">아이디 : </label>
-					<span class="rdiv" id="id" >####</span>
+				<div class="mt-10">
+					<input type="text" name="id" placeholder="ID : ###" readonly class="single-input">
 				</div>
-				<div  class="adiv">
-					<label  class="vdiv">닉네임 : </label>
-					<span class="rdiv" id="nickname">####</span>
+				<div class="mt-10">
+					<input type="text" name="nickname" placeholder="NICKNAME : ###" readonly class="single-input">
 				</div>
-				<div  class="adiv">
-					<label  class="vdiv">메일 : </label>
-					<span class="rdiv" id="mail" >####</span>
+				<div class="mt-10">
+					<input type="text" name="mail" placeholder="MAIL : ###" readonly class="single-input">
 				</div>
-				<div  class="adiv">
-					<label class="vdiv">회원성별 : </label>
-					<span class="rdiv" id="gen" >####</span>
+				<div class="mt-10">
+					<input type="text" name="gen" placeholder="GEN : ###" readonly class="single-input">
 				</div>
-				<div class="adiv">
-					<label class="vdiv">가 입 일 : </label>
-					<span class="rdiv" id="sdate">####</span>
+				<div class="mt-10">
+					<input type="text" name="age" placeholder="AGE : ###" readonly class="single-input">
 				</div>
-       		</div>
+				<div class="mt-10">
+					<input type="button" class="button" id="hbtn" value="찜보기">
+					<input type="button" class="button" id="rbtn" value="한줄평">
+					<input type="button" class="button" id="mbtn" value="수정하기">
+				</div>
+			</form>
         </div>
-       
     </main>
+    
     <footer>
      <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
         <!-- footer-bottom area -->
