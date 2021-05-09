@@ -83,6 +83,7 @@
                                         <nav>
                                             <ul id="navigation">                                                                                          
                                                 <li><a href="features.jsp">모든 영화</a></li>
+                                                <li><a href="features.jsp">검색</a></li>
                                             </ul>
                                         </nav>
                                     </div>
@@ -114,9 +115,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center" id="sdiv">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">영화를 검색해보세요!</h1>
-										<input type="text" placeholder="검색어 입력!"  name="search" id="search">
-										<button type="submit" class = "sbtn" id="sbtn">검색</button>
+                               <h1>감정 : </h1>
                                 </div>
                             </div>
                         </div>

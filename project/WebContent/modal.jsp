@@ -2,38 +2,72 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-
-	#sdiv {
-		width : 1000px;
-	}
-	#search {
-		width: 800px; 
-		height: 50px;
-	}
-	#sbtn {
-		background-color: #555555;
-		color: white;
-		border: 2px solid #555555;
-		width : 100px;
-		height: 50px;
+<style type="text/css">	
+	/* The Modal (background) */
+	.searchModal {
+		position: fixed; /* Stay in place */
+		z-index: 10; /* Sit on top */
+		left: 0;
+		top: 0;
+		width: 100%; /* Full width */
+		height: 200%; /* Full height */
+		overflow: auto; /* Enable scroll if needed */
+		background-color: rgb(0,0,0); /* Fallback color */
+		background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 	}
 	
-	#sbtn:hover {
+	/* Modal Content/Box */
+	.search-modal-content {
+		background-color: #fefefe;
+		margin: 15% auto; /* 15% from the top and centered */
+		padding: 20px;
+		border: 1px solid #888;
+		width: 70%; /* Could be more or less, depending on screen size */
+	}	
+	#mtitle{
+		color: black;
+	}
+	#ediv {
+		width : 100%;
+		height : 150px;
+		background-color: grey;
+	}
+
+	#emo {
+		padding-top : 10px;
+		float: left;
+		width : 25%;
+		height : 150px;
+		font-size:80px;
+		background-color: grey;
+		
+	}
+	
+	#emo:hover {
 		background-color: white;
 		color: black;
 	}
-	
 </style>
+<script type="text/javascript">
+	jQuery(document).ready(function () {
+		$("#modal").show();
+	});
+	
+	function closeModal() {
+		$('.searchModal').hide();
+	};
+
+</script>
 <head>
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> ITCHA | main</title>
+    <title> ITCHA | modal</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
     <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
-
+	<script type="text/javascript" src="/project/js/jquery-3.6.0.min.js"></script>
+	
     <!-- CSS here -->
     <link rel="stylesheet" href="assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
@@ -49,6 +83,7 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 </head>
 <body>
   <!-- ? Preloader Start -->
@@ -63,47 +98,7 @@
         </div>
     </div>
     <!-- Preloader Start -->
-    <header>
-        <!-- Header Start -->
-        <div class="header-area header-transparent">
-            <div class="main-header ">
-                <div class="header-bottom  header-sticky">
-                    <div class="container-fluid">
-                        <div class="row align-items-center">
-                            <!-- Logo -->
-                            <div class="col-xl-2 col-lg-2">
-                                <div class="logo">
-                                    <a href="main.jsp">itcha</a>
-                                </div>
-                            </div>
-                            <div class="col-xl-10 col-lg-10">
-                                <div class="menu-wrapper  d-flex align-items-center justify-content-end">
-                                    <!-- Main-menu -->
-                                    <div class="main-menu d-none d-lg-block">
-                                        <nav>
-                                            <ul id="navigation">                                                                                          
-                                                <li><a href="features.jsp">모든 영화</a></li>
-                                            </ul>
-                                        </nav>
-                                    </div>
-                                    <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="login.jsp" class="border-btn">마이페이지</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <!-- Header End -->
-    </header>
-    <!-- header end -->
+   
     <main>
         <!--? slider Area Start-->
         <section class="slider-area ">
@@ -113,10 +108,23 @@
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
-                                <div class="hero__caption text-center" id="sdiv">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">영화를 검색해보세요!</h1>
-										<input type="text" placeholder="검색어 입력!"  name="search" id="search">
-										<button type="submit" class = "sbtn" id="sbtn">검색</button>
+                                <div class="hero__caption text-center">
+                                    <%-- 모달창 추가 --%>
+                                   	<div id="modal" class="searchModal">
+										<div class="search-modal-content">
+											<div class="page-header">
+												<h1 id="mtitle">감정 선택</h1>
+											</div>
+											<div id ="ediv">
+												<div id = "emo">😄</div>
+												<div id = "emo">😡</div>
+												<div id = "emo">😢</div>
+												<div id = "emo">🤩</div>
+											</div>
+										</div>
+									</div>
+
+                                    
                                 </div>
                             </div>
                         </div>

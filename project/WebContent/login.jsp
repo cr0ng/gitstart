@@ -49,7 +49,7 @@
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
+                <a href="main.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
             <h2>로그인</h2>
             <div class="form-input">

@@ -68,6 +68,10 @@
                 <input  type="password" name="pw" placeholder="비밀번호">
             </div>
             <div class="form-input">
+                <label for="name">비밀번호 확인</label>
+                <input type="password" name="password" placeholder="비밀번호 확인">
+            </div>
+            <div class="form-input">
                 <label for="name">E-mail</label>
                 <input type="email" name="email" placeholder="E-mail">
             </div>
@@ -76,25 +80,25 @@
                 <input type="text" name="nickname" placeholder="닉네임">
             </div>
             <div class="form-input">
-            	<label for="name">성별</label>
-                <select name="gen">
-                <option value="1" name="male">남성</option>
-                <option value="2" name="female">여성</option>
-                </select>
+            	<label for="name">성별</label><br>
             </div>
+                <select name="gen">
+	                <option value="1">남성</option>
+	                <option value="2">여성</option>
+                </select>
             <div class="form-input">
                 <label for="name">나이</label>
                 <input type="text" name="age" placeholder="나이">
             </div>
             <div class="form-input">
-                <label for="name">Confirm Password</label>
-                <input type="password" name="password" placeholder="Confirm Password">
+                <label for="name">이미지</label>
+                <input type="file" name="upload" placeholder="파일찾기">
             </div>
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="Registration">
+                <input type="submit" name="submit" value="회원가입">
             </div>
             <!-- Forget Password -->
-            <a href="login.jsp" class="registration">login</a>
+            <a href="login.jsp" class="registration">로그인</a>
         </div>
     </form>
     <!-- /end login form -->
