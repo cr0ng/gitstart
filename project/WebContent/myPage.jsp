@@ -2,24 +2,6 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-
-.bdiv{
-	width : 350px;
-	height : 600px;
-	background-color : pink;
-}
-.mdiv{
-	width : 300px;
-	height : 500px;
-	background-color : yellow;
-}
-.sdiv{
-	width : 300px;
-	height : 80px;
-	background-color : white;
-}
-</style>
 <head>
 <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
@@ -44,6 +26,29 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
+
+<style type="text/css">
+	.mydiv{
+		width : 1000px;
+		margin-top: 100px;
+		background-color : MediumSlateBlue;
+	}
+	
+	.adiv{
+		margin-left : 50px;
+		padding-top : 50px;
+	}
+	.vdiv{
+		text-algin : right;
+		font-size: 30px;
+	}
+	
+	.rdiv{
+		text-algin : right;
+		font-size: 30px;
+	}
+</style>
 </head>
 <body>
  <!-- ? Preloader Start -->
@@ -71,7 +76,7 @@
                                     <a href="main.jsp">itcha</a>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10">
+                             <div class="col-xl-10 col-lg-10">
                                 <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
@@ -82,15 +87,7 @@
                                             </ul>
                                         </nav>
                                     </div>
-                                    <!-- Header-btn -->
-                                    <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="login.jsp" class="border-btn">마이페이지</a>
-                                    </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -109,7 +106,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption hero__caption2 text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">감정별 영화 추천</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">마이페이지</h1>
                                 </div>
                             </div>
                         </div>
@@ -117,80 +114,35 @@
                 </div>
             </div>
         </section>
-        <!--? Our Services Start -->
-        <section class="our-services">
-            <div class="container">
-                <div class="row justify-content-center">
-                    <div class="col-xl-7 col-lg-8">
-                        <!-- Section Tittle -->
-                        <div class="section-tittle text-center mb-80">
-                            <h2>감정 : </h2>
-                        </div>
-                    </div>
-                </div>
-                    <div id="bdiv">
-                        <div id= "mdiv">
-                           	<h1>포스터 위치</h1>
-                        </div>
-                        <div id="sdiv">
-                            <h5>movie1</h5>
-                      	</div>
-                    </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services2.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie2</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services3.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie3</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services4.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie4</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services5.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie5</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services6.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie6</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-        </section>
-        <!-- Our Services End -->
-        
+        <div class ="container" id= "frm" >
+        	<div class="mydiv">
+				<div class="adiv">
+					<label class="vdiv">이름 : </label>
+					<span class="rdiv" id="name">####</span>
+				</div>
+				<div class="adiv">
+					<label  class="vdiv">아이디 : </label>
+					<span class="rdiv" id="id" >####</span>
+				</div>
+				<div  class="adiv">
+					<label  class="vdiv">닉네임 : </label>
+					<span class="rdiv" id="nickname">####</span>
+				</div>
+				<div  class="adiv">
+					<label  class="vdiv">메일 : </label>
+					<span class="rdiv" id="mail" >####</span>
+				</div>
+				<div  class="adiv">
+					<label class="vdiv">회원성별 : </label>
+					<span class="rdiv" id="gen" >####</span>
+				</div>
+				<div class="adiv">
+					<label class="vdiv">가 입 일 : </label>
+					<span class="rdiv" id="sdate">####</span>
+				</div>
+       		</div>
+        </div>
+       
     </main>
     <footer>
      <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
