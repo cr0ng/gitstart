@@ -51,23 +51,23 @@
             <div class="logo-login">
                 <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
-            <h2>Login Here</h2>
+            <h2>로그인</h2>
             <div class="form-input">
-                <label for="name">Email</label>
-                <input  type="email" name="email" placeholder="Email">
+                <label for="name">아이디</label>
+                <input  type="text" name="id" placeholder="아이디">
             </div>
             <div class="form-input">
-                <label for="name">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <label for="name">비밀번호</label>
+                <input type="password" name="password" placeholder="비밀번호">
             </div>
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="login">
+                <input type="submit" name="submit" value="로그인">
             </div>
-            
+          
             <!-- Forget Password -->
-            <a href="#" class="forget">Forget Password</a>
+            <a href="#" class="forget">ID/PW 찾기</a>
             <!-- Forget Password -->
-            <a href="register.jsp" class="registration">Registration</a>
+            <a href="register.jsp" class="registration">회원가입</a>
         </div>
     </form>
     <!-- /end login form -->

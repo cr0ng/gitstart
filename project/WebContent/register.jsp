@@ -53,19 +53,38 @@
             <div class="logo-login">
                 <a href="index.jsp"><img src="assets/img/logo/loder.png" alt=""></a>
             </div>
-            <h2>Registration Here</h2>
+            <h2>회원가입</h2>
 
             <div class="form-input">
-                <label for="name">Full name</label>
-                <input  type="text" name="name" placeholder="Full name">
+                <label for="name">이름</label>
+                <input  type="text" name="name" placeholder="이름">
             </div>
             <div class="form-input">
-                <label for="name">Email Address</label>
-                <input type="email" name="email" placeholder="Email Address">
+                <label for="name">아이디</label>
+                <input  type="text" name="id" placeholder="아이디">
             </div>
             <div class="form-input">
-                <label for="name">Password</label>
-                <input type="password" name="password" placeholder="Password">
+                <label for="name">비밀번호</label>
+                <input  type="password" name="pw" placeholder="비밀번호">
+            </div>
+            <div class="form-input">
+                <label for="name">E-mail</label>
+                <input type="email" name="email" placeholder="E-mail">
+            </div>
+            <div class="form-input">
+                <label for="name">닉네임</label>
+                <input type="text" name="nickname" placeholder="닉네임">
+            </div>
+            <div class="form-input">
+            	<label for="name">성별</label>
+                <select name="gen">
+                <option value="1" name="male">남성</option>
+                <option value="2" name="female">여성</option>
+                </select>
+            </div>
+            <div class="form-input">
+                <label for="name">나이</label>
+                <input type="text" name="age" placeholder="나이">
             </div>
             <div class="form-input">
                 <label for="name">Confirm Password</label>
