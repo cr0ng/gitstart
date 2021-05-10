@@ -88,7 +88,7 @@
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="login.jsp" class="border-btn">마이페이지</a>
+                                        <a href="myPage.jsp" class="border-btn">마이페이지</a>
                                     </div>
                                 </div>
                             </div> 
