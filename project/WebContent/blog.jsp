@@ -90,7 +90,8 @@
         <!-- Header End -->
     </header>
     <main>
-        <!--? slider Area Start-->
+        <!-- slider Area Start -->
+       <%--
         <section class="slider-area slider-area2">
             <div class="slider-active">
                 <!-- Single Slider -->
@@ -107,6 +108,7 @@
                 </div>
             </div>
         </section>
+        --%>
         <!--? Blog Area Start-->
         <section class="blog_area section-padding">
             <div class="container">
@@ -254,42 +256,36 @@
                                 </form>
                             </aside>
                             <aside class="single_sidebar_widget post_category_widget">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Category</h4>
+                                <h4 class="widget_title" style="color: #2d2d2d;">장르</h4>
                                 <ul class="list cat-list">
                                     <li>
                                         <a href="#" class="d-flex">
-                                            <p>Resaurant food</p>
+                                            <p>코미디</p>
                                             <p>(37)</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="d-flex">
-                                            <p>Travel news</p>
+                                            <p>멜로/로맨스</p>
                                             <p>(10)</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="d-flex">
-                                            <p>Modern technology</p>
+                                            <p>액션</p>
                                             <p>(03)</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="d-flex">
-                                            <p>Product</p>
+                                            <p>공포/스릴러</p>
                                             <p>(11)</p>
                                         </a>
                                     </li>
                                     <li>
                                         <a href="#" class="d-flex">
-                                            <p>Inspiration</p>
+                                            <p>SF</p>
                                             <p>21</p>
-                                        </a>
-                                    </li>
-                                    <li>
-                                        <a href="#" class="d-flex">
-                                            <p>Health Care (21)</p>
-                                            <p>09</p>
                                         </a>
                                     </li>
                                 </ul>
@@ -364,7 +360,7 @@
                             </aside>
 
                             <aside class="single_sidebar_widget instagram_feeds">
-                                <h4 class="widget_title" style="color: #2d2d2d;">Instagram Feeds</h4>
+                                <h4 class="widget_title" style="color: #2d2d2d;">recommend movies</h4>
                                 <ul class="instagram_row flex-wrap">
                                     <li>
                                         <a href="#">
@@ -433,6 +429,7 @@
         </section>
         <!-- Want To work End -->
     </main>
+    <%--
     <footer>
      <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
         <!-- Footer Start-->
@@ -529,6 +526,7 @@
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
+     --%>
 <!-- JS here -->
 
 <script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>

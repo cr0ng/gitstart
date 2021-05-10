@@ -105,69 +105,45 @@
             <div class="container">
                
                 <div class="row">
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">가장 보통의 연애</a></h3>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">쥬만지</a></h3>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">Design & creatives</a></h3>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">Design & creatives</a></h3>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">Design & creatives</a></h3>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services1.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                            </div>
-                        </div>
-                           <h3><a href="#">Design & creatives</a></h3>
-                    </div>
-                    
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/blog/poster1.jpg" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">가장 보통의 연애</h2>
+		                         </a>
+		                        <ul class="blog-info-link mt-3 mb-4">
+						         	<li><a href="#"><i class="fa fa-heart"></i> 찜하기</a></li>
+						         	<li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+						       </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/blog/poster2.jpg" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">가장 보통의 연애</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/blog/poster3.jpg" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">가장 보통의 연애</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+               </div>
+                   
                 </div>
-            </div>
         </section>
         <!-- Our Services End -->
         
@@ -203,6 +179,7 @@
                       </div>
                   </div>
               </div>
+              
           </div>
           <!-- Footer End-->
       </div>
