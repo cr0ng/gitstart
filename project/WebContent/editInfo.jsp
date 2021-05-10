@@ -2,33 +2,10 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-
-	#sdiv {
-		width : 1000px;
-	}
-	#search {
-		width: 800px; 
-		height: 50px;
-	}
-	#sbtn {
-		background-color: #6A5ACD;
-		color: white;
-		border: 2px solid #6A5ACD;
-		width : 100px;
-		height: 50px;
-	}
-	
-	#sbtn:hover {
-		background-color: white;
-		color: black;
-	}
-	
-</style>
 <head>
-    <meta charset="utf-8">
+<meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> ITCHA | main</title>
+    <title> itcha</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -49,9 +26,53 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+
+<style type="text/css">	
+	.single-input{
+		margin-top : 10px;
+		margin-bottom : 20px;
+	}
+	
+	.profile{
+		display:inline-block;
+		background-color ::#23a3a7;
+		color : white;
+		cursor:pointer;
+		
+	}
+	#title{
+		margin-left: 10px;
+	}
+	
+	.button{
+		  background-color: white;
+ 		  color: black;
+  		  border: 2px solid #E6E6FA;
+  		  width: 33%;
+  		  font-weight : bold;
+  		  font-size : 15pt;
+  		  color : grey;
+	}
+	
+	.button:hover {
+		background-color: #E6E6FA;
+	}
+	
+	input:nth-child(2){
+		float:right;
+	}
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+	
+	})
+
+</script>
 </head>
 <body>
-  <!-- ? Preloader Start -->
+ <!-- ? Preloader Start -->
     <div id="preloader-active">
         <div class="preloader d-flex align-items-center justify-content-center">
             <div class="preloader-inner position-relative">
@@ -76,25 +97,21 @@
                                     <a href="main.jsp">itcha</a>
                                 </div>
                             </div>
-                            <div class="col-xl-10 col-lg-10">
+                             <div class="col-xl-10 col-lg-10">
                                 <div class="menu-wrapper  d-flex align-items-center justify-content-end">
                                     <!-- Main-menu -->
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
                                                 <li><a href="features.jsp">모든 영화</a></li>
+                                                <li><a href="main.jsp">검색</a></li>
                                             </ul>
                                         </nav>
                                     </div>
-                                    <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
                                         <a href="myPage.jsp" class="border-btn">마이페이지</a>
                                     </div>
-                                </div>
-                            </div> 
-                            <!-- Mobile Menu -->
-                            <div class="col-12">
-                                <div class="mobile_menu d-block d-lg-none"></div>
+                                  </div>
                             </div>
                         </div>
                     </div>
@@ -103,25 +120,56 @@
         </div>
         <!-- Header End -->
     </header>
-    <!-- header end -->
     <main>
         <!--? slider Area Start-->
-        <section class="slider-area ">
+        <section class="slider-area slider-area2">
             <div class="slider-active">
                 <!-- Single Slider -->
-                <div class="single-slider slider-height">
+                <div class="single-slider slider-height2">
                     <div class="container">
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
-                                <div class="hero__caption text-center" id="sdiv">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">영화를 검색해보세요!</h1>
-										<input type="text" placeholder="검색어 입력!"  name="search" id="search">
-										<button type="submit" class = "sbtn" id="sbtn">검색</button>
+                                <div class="hero__caption hero__caption2 text-center">
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">내 정보 수정</h1>
                                 </div>
                             </div>
                         </div>
                     </div>          
                 </div>
+            </div>
+        </section>
+        <div class ="container" id= "frm" style="margin-top :50px; margin-bottom: 50px " >
+        	<form action="#">
+				<div class="mt-10">
+					<span id="title" >PROFILE : </span>
+					<input type="file" name="profile" id="profile" class="single-input">
+				</div>
+				<div class="mt-10">
+					<span id="title" >NAME : </span>
+					<input type="text" name="name" placeholder="###" class="single-input">
+				</div>
+				<div class="mt-10">
+				<span id="title" >ID : </span>
+					<input type="text" name="id" placeholder="###" readonly class="single-input">
+				</div>
+				<div class="mt-10">
+				<span id="title" >NICKNAME : </span>
+					<input type="text" name="nickname" placeholder="###" class="single-input">
+				</div>
+				<div class="mt-10">
+				<span id="title" >PASSWORD : </span>
+					<input type="text" name="mail" placeholder="###"  class="single-input">
+				</div>
+				<div class="mt-10">
+					<span id="title" >PASSWORD CHECK: </span>
+					<input type="text" name="gen" placeholder="###" class="single-input">
+				</div>
+				
+				<div class="mt-10">
+					<input type="button" class="button" id="mbtn" value="마이페이지">
+					<input type="button" class="button" id="sbtn" value="수정하기">
+				</div>
+			</form>
         </div>
     </main>
     
@@ -191,5 +239,6 @@
 <!-- Jquery Plugins, main Jquery -->	
 <script src="./assets/js/plugins.js"></script>
 <script src="./assets/js/main.js"></script>
+
 </body>
 </html>
