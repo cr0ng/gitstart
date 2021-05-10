@@ -44,6 +44,18 @@
     <link rel="stylesheet" href="assets/css/slick.css">
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
+    
+<script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
+<style type="text/css">
+	#img{
+		width: 300px;
+		height: auto;
+	}
+	
+</style>
+<script type="text/javascript">
+	
+</script>
 </head>
 <body>
  <!-- ? Preloader Start -->
@@ -137,55 +149,129 @@
                       	</div>
                     </div>
                     </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services2.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie2</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services3.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie3</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services4.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie4</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services5.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie5</a></h5>
-                            </div>
-                        </div>
-                    </div>
-                    <div class=" col-lg-4 col-md-6 col-sm-6">
-                        <div class="single-services mb-30">
-                            <div class="services-ion">
-                                <img src="assets/img/icon/services6.svg" alt="">
-                            </div>
-                            <div class="services-cap">
-                                <h5><a href="#">movie6</a></h5>
-                            </div>
-                        </div>
+            <div class="container">
+               
+                <div class="row">
+                  <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100001.jpg" id="img" alt="" >
+		                             <h2 class="blog-head" style="color: #2d2d2d;">가장 보통의 연애</h2>
+		                         </a>
+		                        <ul class="blog-info-link mt-3 mb-4">
+						         	<li><a href="#"><i class="fa fa-heart"></i> 찜하기</a></li>
+						         	<li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+						       </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100002.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">기묘한 가족</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100003.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">감쪽같은 그녀</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100004.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">기생충</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100005.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">그대이름은 장미</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100006.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">극한직업</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100007.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">굿 라이어</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100008.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">그것</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100009.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">곤지암</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
+                    <div class=" col-lg-4 col-md-4 col-sm-8">
+	                     <div class="blog_details">
+		                         <a class="d-inline-block" href="blog_details.jsp">
+	                        <img src="assets/img/poster/poster100010.jpg" id="img" alt="">
+		                             <h2 class="blog-head" style="color: #2d2d2d;">남산의 부장들</h2>
+		                         </a>
+		                         <ul class="blog-info-link">
+		                             <li><a href="#"><i class="fa fa-user"></i>찜하기</a></li>
+		                             <li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+		                         </ul>
+	                   	 </div>
+                     </div>
                     </div>
                 </div>
         </section>
