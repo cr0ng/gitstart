@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="assets/css/nice-select.css">
     <link rel="stylesheet" href="assets/css/style.css">
     <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
+    <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
 
 <style type="text/css">
 	.button{
@@ -43,6 +44,22 @@
 		background-color: #E6E6FA;
 	}
 </style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('.hbtn').click(function(){
+			location.href='';
+		});
+		
+		$('#cbtn').click(function(){
+			location.href='commentList.jsp';
+		});
+		
+		$('.mbtn').click(function(){
+			location.href='';
+		});
+	})
+
+</script>
 </head>
 <body>
  <!-- ? Preloader Start -->
@@ -130,7 +147,7 @@
 				</div>
 				<div class="mt-10">
 					<input type="button" class="button" id="hbtn" value="찜보기">
-					<input type="button" class="button" id="rbtn" value="한줄평">
+					<input type="button" class="button" id="cbtn" value="한줄평">
 					<input type="button" class="button" id="mbtn" value="수정하기">
 				</div>
 			</form>
