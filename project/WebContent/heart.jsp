@@ -32,8 +32,8 @@
     
 <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
 <style type="text/css">
-	.img {
-		width: 100%;
+	#img {
+		width: 300px;
 		height: auto;
 	}
 </style>
@@ -189,12 +189,12 @@
 							</div>
 						</div>
                 	<div class="single-post">
-						<div class="feature-img">
-								<img class="img-fluid" src="assets/img/poster/poster100003.jpg" id="img" alt="">
+						<div class="feature-img" id="img">
+								<img class="img-fluid" src="assets/img/poster/poster100003.jpg" alt="">
 						</div>
 							<div class="blog_details">
 								<a class="d-inline-block" href="blog_details.jsp">
-									<h2 style="color: #2d2d2d;">가장 보통의 연애</h2>
+									<h2 style="color: #2d2d2d;">감쪽같은 그녀</h2>
 								</a>
 								<ul class="blog-info-link mt-3 mb-4">
 									<li><a href="#"><i class="fa fa-heart"></i> 찜하기</a></li>
