@@ -67,7 +67,7 @@
             <!-- Forget Password -->
             <a href="#" class="forget">ID/PW 찾기</a>
             <!-- Forget Password -->
-            <a href="register.jsp" class="registration">회원가입</a>
+            <a href="join.jsp" class="registration">회원가입</a>
         </div>
     </form>
     <!-- /end login form -->

@@ -76,23 +76,16 @@
 									<div class="main-menu d-none d-lg-block">
 										<nav>
 											<ul id="navigation">
-												<li class="active"><a href="features.jsp">모든영화</a></li>
+												<li class="active"><a href="movielist
+												.jsp">모든영화</a></li>
 												<li><a href="myPage.jsp">나의페이지</a></li>
 												<li><a href="main.jsp">검색</a></li>
-												<li><a href="faq.jsp">FAQ</a></li>
-												<li><a href="#">Blog</a>
-													<ul class="submenu">
-														<li><a href="blog.jsp">Blog</a></li>
-														<li><a href="blog_details.jsp">Blog Details</a></li>
-														<li><a href="elements.jsp">Element</a></li>
-													</ul></li>
-												<li><a href="contact.jsp">Contact</a></li>
 											</ul>
 										</nav>
 									</div>
 									<!-- Header-btn -->
 									<div class="header-right-btn d-none d-lg-block ml-65">
-										<a href="login.jsp" class="border-btn">Log in</a>
+										<a href="myPage.jsp" class="border-btn">myPage</a>
 									</div>
 								</div>
 							</div>
@@ -423,25 +416,6 @@
 				</div>
 			</div>
 		</section>
-		<%--
-<!-- Blog Area End -->
-<!--? Want To work 01-->
-<section class="wantToWork-area " >
- <div class="container">
-   <div class="wants-wrapper w-padding2 section-bg2" data-background="assets/img/gallery/section_bg02.png">
-     <div class="row align-items-center justify-content-center">
-       <div class="col-xl-7 col-lg-9 col-md-8">
-         <div class="wantToWork-caption text-center">
-           <h2>Start finding your dream job</h2>
-           <p>The automated process starts as soon as your clothes go into the machine. The outcome is gleaming clothes placeholder text commonly used.</p>
-           <a href="#" class="btn3 wantToWork-btn">Browse Job</a>
-         </div>
-       </div>
-     </div>
-   </div>
- </div>
-</section>
- --%>
 	</main>
 	
 	<div id="back-top">

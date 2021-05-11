@@ -89,14 +89,14 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="features.jsp">모든 영화</a></li>
+                                                <li><a href="movielist.jsp">모든 영화</a></li>
                                                 <li><a href="main.jsp">검색</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="login.jsp" class="border-btn">마이페이지</a>
+                                        <a href="myPage.jsp" class="border-btn">마이페이지</a>
                                     </div>
                                 </div>
                             </div> 

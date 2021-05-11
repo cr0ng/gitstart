@@ -29,23 +29,7 @@
     <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
     <script type="text/javascript" src="./assets/js/jquery-3.6.0.min.js"></script>
 
-<style type="text/css">	
-	.single-input{
-		margin-top : 10px;
-		margin-bottom : 20px;
-	}
-	
-	.profile{
-		display:inline-block;
-		background-color ::#23a3a7;
-		color : white;
-		cursor:pointer;
-		
-	}
-	#title{
-		margin-left: 10px;
-	}
-	
+<style type="text/css">
 	.button{
 		  background-color: white;
  		  color: black;
@@ -59,14 +43,20 @@
 	.button:hover {
 		background-color: #E6E6FA;
 	}
-	
-	input:nth-child(2){
-		float:right;
-	}
 </style>
 <script type="text/javascript">
 	$(document).ready(function(){
-	
+		$('.hbtn').click(function(){
+			location.href='';
+		});
+		
+		$('#cbtn').click(function(){
+			location.href='commentList.jsp';
+		});
+		
+		$('.mbtn').click(function(){
+			location.href='';
+		});
 	})
 
 </script>
@@ -103,13 +93,10 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="features.jsp">모든 영화</a></li>
+                                                <li><a href="movielist.jsp">모든 영화</a></li>
                                                 <li><a href="main.jsp">검색</a></li>
                                             </ul>
                                         </nav>
-                                    </div>
-                                    <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="myPage.jsp" class="border-btn">마이페이지</a>
                                     </div>
                                   </div>
                             </div>
@@ -130,7 +117,7 @@
                         <div class="row justify-content-center">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption hero__caption2 text-center">
-                                    <h1 data-animation="bounceIn" data-delay="0.2s">내 정보 수정</h1>
+                                    <h1 data-animation="bounceIn" data-delay="0.2s">마이페이지</h1>
                                 </div>
                             </div>
                         </div>
@@ -141,33 +128,27 @@
         <div class ="container" id= "frm" style="margin-top :50px; margin-bottom: 50px " >
         	<form action="#">
 				<div class="mt-10">
-					<span id="title" >PROFILE : </span>
-					<input type="file" name="profile" id="profile" class="single-input">
+					<input type="text" name="name" placeholder="NAME : ###" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<span id="title" >NAME : </span>
-					<input type="text" name="name" placeholder="###" class="single-input">
+					<input type="text" name="id" placeholder="ID : ###" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-				<span id="title" >ID : </span>
-					<input type="text" name="id" placeholder="###" readonly class="single-input">
+					<input type="text" name="nickname" placeholder="NICKNAME : ###" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-				<span id="title" >NICKNAME : </span>
-					<input type="text" name="nickname" placeholder="###" class="single-input">
+					<input type="text" name="mail" placeholder="MAIL : ###" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-				<span id="title" >PASSWORD : </span>
-					<input type="text" name="mail" placeholder="###"  class="single-input">
+					<input type="text" name="gen" placeholder="GEN : ###" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<span id="title" >PASSWORD CHECK: </span>
-					<input type="text" name="gen" placeholder="###" class="single-input">
+					<input type="text" name="age" placeholder="AGE : ###" readonly class="single-input">
 				</div>
-				
 				<div class="mt-10">
-					<input type="button" class="button" id="mbtn" value="마이페이지">
-					<input type="button" class="button" id="sbtn" value="수정하기">
+					<input type="button" class="button" id="hbtn" value="찜보기">
+					<input type="button" class="button" id="cbtn" value="한줄평">
+					<input type="button" class="button" id="mbtn" value="수정하기">
 				</div>
 			</form>
         </div>
