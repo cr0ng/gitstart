@@ -1,11 +1,8 @@
 package com.increpas.project.controller;
 
-import java.io.*;
-
-import javax.servlet.*;
-import javax.servlet.http.*;
+import javax.servlet.http.HttpServletRequest;
+import javax.servlet.http.HttpServletResponse;
 
 public interface ProjController {
-	String exec(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException;
-	
+	String exec(HttpServletRequest req, HttpServletResponse resp);
 }

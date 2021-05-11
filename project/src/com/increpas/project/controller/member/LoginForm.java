@@ -14,7 +14,15 @@ public class LoginForm implements ProjController {
 	public String exec(HttpServletRequest req, HttpServletResponse resp) {	
 		
 		String view = "member/login"; 
-		
+		/*
+		if(req.getSession().getAttribute("SID") != null) {
+			req.setAttribute("isRedirect", true);
+			view = "/proj/emotion.project";
+		}
+		if(req.getParameter("msg") != null) {
+			req.setAttribute("MSG", req.getParameter("msg"));
+		}
+		*/
 		return view;
 	}
 
