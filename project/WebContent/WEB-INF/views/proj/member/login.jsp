@@ -85,7 +85,7 @@
             	<input type="submit" name="submit" id="lbtn" value="로그인"> 
             </div>
          	 -->
-            	<div class="w3-padding w3-blue w3-round-xlarge w3-hover-white" id="lbtn">로그인</div>
+            	<div class="w3-padding w3-blue w3-round-xlarge w3-hover-white w3-center" id="lbtn">로그인</div>
             <!-- Forget Password -->
             <a href="findIDPW.project" class="forget">ID/PW 찾기</a>
             <!-- Forget Password -->

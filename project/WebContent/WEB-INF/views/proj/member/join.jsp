@@ -3,12 +3,18 @@
 <!DOCTYPE html>
 <html>
 	<style type="text/css">
-		
+		#ment{
+			margin-top : 20px;
+			color : white;
+		}
+		.error{
+			color:white;
+		}
 	</style>
 <head>
  <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> App landing</title>
+    <title> Itcha</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -31,6 +37,90 @@
 	<link rel="stylesheet" href="/project/assets/css/slick.css">
 	<link rel="stylesheet" href="/project/assets/css/nice-select.css">
 	<link rel="stylesheet" href="/project/assets/css/style.css">
+	<script type="text/javascript" src="/project/assets/js/jquery-3.6.0.min.js"></script>
+	
+	<script type ="text/javascript">
+	$(document).ready(function(){
+		
+		// 이름 정규식
+		$('#name').focusout(function(){
+			var regName = RegExp(/^[가-힣0-9]{2,}$/);
+			
+			if(regName.test($('#name').val())){
+				$('#error1').hide();		
+			}else
+				$('#error1').show();
+		});
+	
+		// 아이디 정규식
+		$('#id').focusout(function(){
+			var regName = RegExp(/^[a-z]+[a-z0-9]{2,14}$/);
+			
+			if(regName.test($('#id').val())){
+				$('#error2').hide();		
+			}else
+				$('#error2').show();
+		});
+		
+		// 비번 정규식
+		$('#pw').focusout(function(){
+			var regName = RegExp(/^[a-zA-Z0-9!_+%*]{5,20}$/);
+			
+			if(regName.test($('#pw').val())){
+				$('#error3').hide();		
+			}else
+				$('#error3').show();
+		});
+		
+		// 비번 일치 확인
+		$('#repw').focusout(function(){
+					
+			if($('#repw').val() === $('#pw').val()){
+				$('#error4').hide();
+			}else
+				$('#error4').show();
+		});
+		
+		// 메일 정규식
+		$('#email').focusout(function(){
+			var regName = RegExp(/^[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*@[0-9a-zA-Z]([-_\.]?[0-9a-zA-Z])*\.[a-zA-Z]{2,3}$/i);
+
+			if(regName.test($('#email').val())){
+				$('#error5').hide();		
+			}else
+				$('#error5').show();
+		});
+		
+		// 닉네임 정규식
+		$('#nickname').focusout(function(){
+			var regName = RegExp(/^[a-z0-9]{3,15}/);
+			
+			if(regName.test($('#nickname').val())){
+				$('#error6').hide();		
+			}else
+				$('#error6').show();
+		});
+		
+		$('#jbtn').click(function(){
+			var sname = $('#name').val();
+			var sid = $('#id').val();
+			var spw = $('#pw').val();
+			var smail = $('#email').val();
+			var snickname = $('#nickname').val();
+			var sgen = $('[name="gen"]:selected').val();
+			var sage = $('#age').val();
+			
+			// 유효성 검사
+			if(!(sname && sid && spw && smail && snickname && sage)){
+				alert('입력되지 않은 곳이 있습니다.');
+				return;
+			}
+		
+			$('#frm').submit();
+		});
+		
+	});
+	</script>
 	
 </head>
 <body>
@@ -52,7 +142,7 @@
 
 <main class="login-body" data-vide-bg="/project/assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="/project/member/JoinProc.project" method="POST" id="frm" name="frm">
         
         <div class="login-form">
             <!-- logo-login -->
@@ -63,27 +153,34 @@
 
             <div class="form-input">
                 <label for="name">이름</label>
-                <input  type="text" name="name" placeholder="이름">
+                <input  type="text" name="name" id="name" placeholder="이름">
+           		<div class="error" id ="error1" style= "display:none ">한글과 숫자 2글자 이상</div>
             </div>
             <div class="form-input">
                 <label for="name">아이디</label>
-                <input  type="text" name="id" placeholder="아이디">
+                <input  type="text" name="id" id="id" placeholder="아이디">
+               	<div class="error"  id ="error2" style= "display:none ">영소문자로 시작하는 3~15자 영소문자 또는 숫자</div>
             </div>
             <div class="form-input">
                 <label for="name">비밀번호</label>
-                <input  type="password" name="pw" placeholder="비밀번호">
+                <input  type="password" name="pw" id="pw" placeholder="비밀번호">
+                <div class="error"  id ="error3" style= "display:none ">대소문자,숫자,특수문자(!_+%*) 5~20자</div>
             </div>
             <div class="form-input">
                 <label for="name">비밀번호 확인</label>
-                <input type="password" name="password" placeholder="비밀번호 확인">
+                <input type="password" name="repw" id="repw" placeholder="비밀번호 확인">
+                <div class="error"  id ="error4" style= "display:none ">비밀번호가 일치하지 않습니다.</div>
+                
             </div>
             <div class="form-input">
                 <label for="name">E-mail</label>
-                <input type="email" name="email" placeholder="E-mail">
+                <input type="email" name="email" id ="email" placeholder="E-mail">
+                 <div class="error"  id ="error5" style= "display:none ">이메일 형식으로 입력하세요</div>
             </div>
             <div class="form-input">
                 <label for="name">닉네임</label>
-                <input type="text" name="nickname" placeholder="닉네임">
+                <input type="text" name="nickname" id="nickname"placeholder="닉네임">
+                 <div class="error"  id ="error6" style= "display:none ">소문자,숫자 3~15</div>
             </div>
             <div class ="form-input">
             	<label for="name">성별</label><br>
@@ -96,17 +193,13 @@
             </div>
             <div class="form-input" >
                 <label for="name">나이</label>
-                <input type="text" name="age" placeholder="나이">
+                <input type="text" name="age" id="age" placeholder="나이">
             </div>
-            <div class="form-input" >
-                <label for="name">프로필 사진</label>
-                <input type="file" name="upload" style="height : 60px; padding-bottom: 10px" placeholder="파일찾기">
-            </div>
-            <div class="form-input pt-30">
-                <input type="submit" name="submit" value="회원가입">
-            </div>
+           
+            <div class="w3-padding w3-blue w3-round-xlarge w3-hover-white w3-center" id="jbtn">가입하기</div>
             <!-- Forget Password -->
-            <a href="login.jsp" class="registration">로그인</a>
+            <div id="ment">계정이 있다면? </div>
+            <a href="login.project" class="registration">로그인</a>
         </div>
     </form>
     <!-- /end login form -->

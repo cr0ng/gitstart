@@ -121,8 +121,8 @@ public class MemberDao {
 			pstmt.setString(5, mVO.getNickname());
 			pstmt.setString(6, mVO.getGender());
 			pstmt.setInt(7, mVO.getAge());
-			
 			cnt = pstmt.executeUpdate();
+			System.out.println(cnt);
 		} catch (Exception e) {
 			e.printStackTrace();
 		} finally {
