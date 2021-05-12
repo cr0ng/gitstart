@@ -5,7 +5,7 @@
 <head>
  <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> App landing</title>
+    <title> ITCHA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
@@ -27,6 +27,25 @@
 	<link rel="stylesheet" href="/project/assets/css/slick.css">
 	<link rel="stylesheet" href="/project/assets/css/nice-select.css">
 	<link rel="stylesheet" href="/project/assets/css/style.css">
+	<script type="text/javascript" src="/project/assets/js/jquery-3.6.0.min.js"></script>
+	
+	<script type="text/javascript">
+	$(document).ready(function(){
+		$('#lbtn').click(function(){
+			var sid = $(document.frm.id).val();
+			var spw = $(document.frm.pw).val();
+			
+			if(!(sid && spw)){
+				alert('입력사항을 확인하세요!');
+				return;
+			}
+			
+			//alert("sid : " + sid);
+			$('#frm').submit();
+		});
+	});
+	
+	</script>
 </head>
 <body>
 <!-- ? Preloader Start -->
@@ -45,57 +64,36 @@
 
 <main class="login-body" data-vide-bg="/project/assets/img/login-bg.mp4">
     <!-- Login Admin -->
-    <form class="form-default" action="login-bg.mp4" method="POST">
+    <form class="form-default" action="http://localhost/project/member/loginProc.project" method="POST" name ="frm" id="frm">
         
         <div class="login-form">
             <!-- logo-login -->
             <div class="logo-login">
-                <a href="main.jsp"><img src="/project/assets/img/logo/loder.png" alt=""></a>
+                <a href="main.project"><img src="/project/assets/img/logo/loder.png" alt=""></a>
             </div>
             <h2>로그인</h2>
             <div class="form-input">
                 <label for="name">아이디</label>
-                <input  type="text" name="id" placeholder="아이디">
+                <input  type="text" name="id" id="id" placeholder="아이디">
             </div>
             <div class="form-input">
                 <label for="name">비밀번호</label>
-                <input type="password" name="password" placeholder="비밀번호">
+                <input type="password" name="pw" id="pw" placeholder="비밀번호">
             </div>
+            <!--
             <div class="form-input pt-30">
-                <input type="submit" name="submit" value="로그인">
+            	<input type="submit" name="submit" id="lbtn" value="로그인"> 
             </div>
-          
+         	 -->
+            	<div class="w3-padding w3-blue w3-round-xlarge w3-hover-white" id="lbtn">로그인</div>
             <!-- Forget Password -->
-            <a href="#" class="forget">ID/PW 찾기</a>
+            <a href="findIDPW.project" class="forget">ID/PW 찾기</a>
             <!-- Forget Password -->
-            <a href="join.jsp" class="registration">회원가입</a>
+            <a href="join.project" class="registration">회원가입</a>
         </div>
     </form>
     <!-- /end login form -->
 </main>
-
-<c:if test="${not empty MSG}">
-      <div id="msgWin" class="w3-modal">
-         <div class="w3-modal-content mxw600 w3-card-4">
-            <header class="w3-container w3-red"> 
-               <span class="w3-button w3-display-topright" id="closeBtn">&times;</span>
-               <h2>로그인 실패</h2>
-            </header>
-            <div class="w3-container w3-margin-bottom">
-               <h3 class="w3-padding w3-text-red">로그인에 실패했습니다!</h3>
-            </div>
-         </div>
-      </div>
-      <script type="text/javascript">
-         $(document).ready(function(){
-            $('#msgWin').css('display', 'block');
-            
-            $('#closeBtn').click(function(){
-               $('#msgWin').css('display', 'none');
-            });
-         });
-      </script>
-</c:if>
 
     <script src="/project/assets/js/vendor/modernizr-3.5.0.min.js"></script>
     <!-- Jquery, Popper, Bootstrap -->

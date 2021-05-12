@@ -16,7 +16,6 @@ public class Resrc extends HttpServlet{
 		 		url에서 /cafe 이후 부분을 추출해서 문서의 경로를 만들어주면 된다.
 		 */
 		url = url.substring(url.indexOf("/",1));
-		System.out.println("############# url : " + url);
 		
 		RequestDispatcher rd = req.getRequestDispatcher("/WEB-INF/resources/" + url);
 		try {
