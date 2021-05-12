@@ -9,24 +9,24 @@
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="manifest" href="site.webmanifest">
-    <link rel="shortcut icon" type="image/x-icon" href="/project/assets/img/favicon.ico">
+    <link rel="shortcut icon" type="image/x-icon" href="assets/img/favicon.ico">
 	<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
 	<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Karma">
     <!-- CSS here -->
-    <link rel="stylesheet" href="/project/assets/css/bootstrap.min.css">
-    <link rel="stylesheet" href="/project/assets/css/owl.carousel.min.css">
-    <link rel="stylesheet" href="/project/assets/css/slicknav.css">
-    <link rel="stylesheet" href="/project/assets/css/flaticon.css">
-    <link rel="stylesheet" href="/project/assets/css/progressbar_barfiller.css">
-    <link rel="stylesheet" href="/project/assets/css/gijgo.css">
-    <link rel="stylesheet" href="/project/assets/css/animate.min.css">
-    <link rel="stylesheet" href="/project/assets/css/animated-headline.css">
-    <link rel="stylesheet" href="/project/assets/css/magnific-popup.css">
-    <link rel="stylesheet" href="/project/assets/css/fontawesome-all.min.css">
-    <link rel="stylesheet" href="/project/assets/css/themify-icons.css">
-    <link rel="stylesheet" href="/project/assets/css/slick.css">
-    <link rel="stylesheet" href="/project/assets/css/nice-select.css">
-    <link rel="stylesheet" href="/project/assets/css/style.css">
+    <link rel="stylesheet" href="assets/css/bootstrap.min.css">
+    <link rel="stylesheet" href="assets/css/owl.carousel.min.css">
+    <link rel="stylesheet" href="assets/css/slicknav.css">
+    <link rel="stylesheet" href="assets/css/flaticon.css">
+    <link rel="stylesheet" href="assets/css/progressbar_barfiller.css">
+    <link rel="stylesheet" href="assets/css/gijgo.css">
+    <link rel="stylesheet" href="assets/css/animate.min.css">
+    <link rel="stylesheet" href="assets/css/animated-headline.css">
+    <link rel="stylesheet" href="assets/css/magnific-popup.css">
+    <link rel="stylesheet" href="assets/css/fontawesome-all.min.css">
+    <link rel="stylesheet" href="assets/css/themify-icons.css">
+    <link rel="stylesheet" href="assets/css/slick.css">
+    <link rel="stylesheet" href="assets/css/nice-select.css">
+    <link rel="stylesheet" href="assets/css/style.css">
 </head>
 <body>
  <!-- ? Preloader Start -->
@@ -35,7 +35,7 @@
             <div class="preloader-inner position-relative">
                 <div class="preloader-circle"></div>
                 <div class="preloader-img pere-text">
-                    <img src="/project/assets/img/logo/loder.png" alt="">
+                    <img src="assets/img/logo/loder.png" alt="">
                 </div>
             </div>
         </div>
@@ -67,7 +67,7 @@
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="myPage.jsp" class="border-btn">마이페이지</a>
+                                        <a href="login.jsp" class="border-btn">마이페이지</a>
                                     </div>
                                 </div>
                             </div> 
@@ -103,7 +103,7 @@
 		<!--? Our Services Start -->
 
 
-		<main class="login-body" data-vide-bg="/project/assets/img/login-bg.mp4">
+		<main class="login-body" data-vide-bg="assets/img/login-bg.mp4">
 			<!-- Login Admin -->
 			<div class="section-top-border">
 				<div class="row">
@@ -145,8 +145,25 @@
 					<div class="col-md-3"></div>
 				</div>
 			</div>
+
+
+
 			<!-- /end login form -->
 		</main>
+
+
+
+
+
+
+
+
+
+
+
+
+
+		<!-- Our Services End -->
         
     </main>
 
@@ -154,9 +171,19 @@
   <div id="back-top" >
     <a title="Go to Top" href="#"> <i class="fas fa-level-up-alt"></i></a>
 </div>
- 
+ <!-- Pagination -->
+  <div class="w3-center w3-padding-32">
+    <div class="w3-bar">
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">«</a>
+      <a href="#" class="w3-bar-item w3-black w3-button">1</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">2</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">3</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">4</a>
+      <a href="#" class="w3-bar-item w3-button w3-hover-black">»</a>
+    </div>
+  </div>
     <footer>
-     <div class="footer-wrappper section-bg" data-background="/project/assets/img/gallery/footer-bg.png">
+     <div class="footer-wrappper section-bg" data-background="assets/img/gallery/footer-bg.png">
         <!-- footer-bottom area -->
         <div class="footer-bottom-area">
             <div class="container">
@@ -176,46 +203,46 @@
       </div>
   </footer>
 <!-- JS here -->
-<script src="/project/assets/js/vendor/modernizr-3.5.0.min.js"></script>
+<script src="./assets/js/vendor/modernizr-3.5.0.min.js"></script>
 <!-- Jquery, Popper, Bootstrap -->
-<script src="/project/assets/js/vendor/jquery-1.12.4.min.js"></script>
-<script src="/project/assets/js/popper.min.js"></script>
-<script src="/project/assets/js/bootstrap.min.js"></script>
+<script src="./assets/js/vendor/jquery-1.12.4.min.js"></script>
+<script src="./assets/js/popper.min.js"></script>
+<script src="./assets/js/bootstrap.min.js"></script>
 <!-- Jquery Mobile Menu -->
-<script src="/project/assets/js/jquery.slicknav.min.js"></script>
+<script src="./assets/js/jquery.slicknav.min.js"></script>
 
 <!-- Jquery Slick , Owl-Carousel Plugins -->
-<script src="/project/assets/js/owl.carousel.min.js"></script>
-<script src="/project/assets/js/slick.min.js"></script>
+<script src="./assets/js/owl.carousel.min.js"></script>
+<script src="./assets/js/slick.min.js"></script>
 <!-- One Page, Animated-HeadLin -->
-<script src="/project/assets/js/wow.min.js"></script>
-<script src="/project/assets/js/animated.headline.js"></script>
-<script src="/project/assets/js/jquery.magnific-popup.js"></script>
+<script src="./assets/js/wow.min.js"></script>
+<script src="./assets/js/animated.headline.js"></script>
+<script src="./assets/js/jquery.magnific-popup.js"></script>
 
 <!-- Date Picker -->
-<script src="/project/assets/js/gijgo.min.js"></script>
+<script src="./assets/js/gijgo.min.js"></script>
 <!-- Nice-select, sticky -->
-<script src="/project/assets/js/jquery.nice-select.min.js"></script>
-<script src="/project/assets/js/jquery.sticky.js"></script>
+<script src="./assets/js/jquery.nice-select.min.js"></script>
+<script src="./assets/js/jquery.sticky.js"></script>
 <!-- Progress -->
-<script src="/project/assets/js/jquery.barfiller.js"></script>
+<script src="./assets/js/jquery.barfiller.js"></script>
 
 <!-- counter , waypoint,Hover Direction -->
-<script src="/project/assets/js/jquery.counterup.min.js"></script>
-<script src="/project/assets/js/waypoints.min.js"></script>
-<script src="/project/assets/js/jquery.countdown.min.js"></script>
-<script src="/project/assets/js/hover-direction-snake.min.js"></script>
+<script src="./assets/js/jquery.counterup.min.js"></script>
+<script src="./assets/js/waypoints.min.js"></script>
+<script src="./assets/js/jquery.countdown.min.js"></script>
+<script src="./assets/js/hover-direction-snake.min.js"></script>
 
 <!-- contact js -->
-<script src="/project/assets/js/contact.js"></script>
-<script src="/project/assets/js/jquery.form.js"></script>
-<script src="/project/assets/js/jquery.validate.min.js"></script>
-<script src="/project/assets/js/mail-script.js"></script>
-<script src="/project/assets/js/jquery.ajaxchimp.min.js"></script>
+<script src="./assets/js/contact.js"></script>
+<script src="./assets/js/jquery.form.js"></script>
+<script src="./assets/js/jquery.validate.min.js"></script>
+<script src="./assets/js/mail-script.js"></script>
+<script src="./assets/js/jquery.ajaxchimp.min.js"></script>
 
 <!-- Jquery Plugins, main Jquery -->   
-<script src="/project/assets/js/plugins.js"></script>
-<script src="/project/assets/js/main.js"></script>
+<script src="./assets/js/plugins.js"></script>
+<script src="./assets/js/main.js"></script>
 
 </body>
 </html>
