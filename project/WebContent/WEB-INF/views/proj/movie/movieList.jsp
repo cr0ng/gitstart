@@ -76,10 +76,34 @@ $(document).ready(function(){
 	var arr = ${JDATA};
 	alert(arr[0]);
 	for(var i = 0; i < arr.length; i++ ){
-		var cname = '.j' + arr[i].movie_num;
+		var cname = '.j' + arr[i];
 		$(cname).addClass('change');
 	}
 		
+
+	$('.fa-heart').click(function(){
+		var el = $(this);
+		var mno = $(this).parent().prev().attr('id');
+		$.ajax({
+			url: "/project/heartProc.project",
+			type: 'POST',
+			dataType: 'json',
+			data: {
+				mno: mno
+			},
+			success: function(obj){
+				var result = obj.result;
+				if(result == 'OK'){
+					$(el).addClass('change');
+				} else {
+					alert('### 처리에 실패했습니다. ####');
+				}
+			},
+			error: function(){
+					alert('### 통신실패 ####');
+			}
+		});
+	});
 	
 	
 });
@@ -201,14 +225,14 @@ $(document).ready(function(){
                <c:forEach var="data" items="${LIST}">
                     <div class=" col-lg-4 col-md-4 col-sm-8">
 	                     <div class="blog_details">
-		                         <a class="d-inline-block mbtn" href="#" id="${data.mno}">
-	                        <img src="/project/assets/img/poster/poster${data.posno}.jpg" id="img" alt="" >
-		                             <h2 class="blog-head" style="color: #2d2d2d;">${data.title}</h2>
-		                         </a>
-		                        <ul class="blog-info-link">
-						         	<li><a href="#"><i class="fa fa-heart j${data.mno}"></i> 찜하기</a></li>
-						         	<li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
-						       </ul>
+		                    <a class="d-inline-block mbtn" href="#" id="${data.mno}">
+		                        <img src="/project/assets/img/poster/poster${data.posno}.jpg" id="img" alt="" >
+			                    <h2 class="blog-head" style="color: #2d2d2d;">${data.title}</h2>
+		                     </a>
+	                        <ul class="blog-info-link">
+					         	<li><a href="#"><div class="fa fa-heart j${data.mno}"></div> 찜하기</a></li>
+					         	<li><a href="#"><i class="fa fa-comments"></i> 03 Comments</a></li>
+					       	</ul>
 	                   	 </div>
                      </div>
                </c:forEach>
