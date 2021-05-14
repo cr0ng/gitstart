@@ -132,6 +132,36 @@ public class MemberDao {
 		return cnt;
 	}
 	
+	// 마이페이지 데이터베이스 전담 처리함수
+	public MemberVO getMyInfo(String sid) {
+		MemberVO mVO = new MemberVO();
+		
+		con = db.getCon();
+		String sql=mSQL.getSQL(mSQL.SEL_ID_INFO);
+		pstmt = db.getPSTMT(con, sql);
+		
+		try {
+			pstmt.setString(1, sid);
+			
+			rs = pstmt.executeQuery();
+			rs.next();
+			
+			mVO.setUser_name(rs.getString("user_name"));
+			mVO.setUser_id(rs.getString("user_id"));
+			mVO.setNickname(rs.getString("nickname"));
+			mVO.setEmail(rs.getString("email"));
+			mVO.setGender(rs.getString("gender").equals("M")? "남성" : "여성");
+			mVO.setAge(rs.getInt("age"));
+		} catch (Exception e) {
+			e.printStackTrace();
+		} finally {
+			db.close(rs);
+			db.close(pstmt);
+			db.close(con);
+		}
+		
+		return mVO;
+	}
 
 	
 }

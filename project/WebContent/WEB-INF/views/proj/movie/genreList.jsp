@@ -69,6 +69,9 @@ $(document).ready(function(){
 		$('#frm').attr('action', '/project/movie/genreList.project');
 		$('#frm').submit();
 	});
+	$('#outbtn').click(function(){
+		$(location).attr('href','http://localhost/project/member/logout.project');
+	});
 });
 </script>
 </head>
@@ -109,15 +112,18 @@ $(document).ready(function(){
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="movielist.project">모든 영화</a></li>
-                                                <li><a href="main.project">검색</a></li>
+                                                <li><a href="/project/movie/movieList.project">모든 영화</a></li>
+                                                <li><a href="/project/main.project">검색</a></li>
                                                 <li><a href="#">공지사항</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="myPage.project" class="border-btn">마이페이지</a>
+                                        <a href="/project/member/myPage.project" class="border-btn">마이페이지</a>
+                                    </div>
+                                     <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <div class="border-btn" id="outbtn" >로그아웃</div>
                                     </div>
                                 </div>
                             </div> 

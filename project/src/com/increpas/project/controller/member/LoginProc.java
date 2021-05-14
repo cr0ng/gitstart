@@ -17,7 +17,7 @@ public class LoginProc implements ProjController {
 		MemberDao mDao = new MemberDao();
 		int cnt = mDao.getLogin(sid,spw);
 		
-		String view = "/project/movie/emotion.project";
+		String view = "/project/main.project";
 		if(cnt == 1) {
 			req.getSession().setAttribute("SID", sid);
 			req.setAttribute("isRedirect", true);

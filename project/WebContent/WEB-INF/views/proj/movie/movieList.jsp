@@ -5,7 +5,7 @@
 <head>
 <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
-    <title> itcha</title>
+    <title> ITCHA</title>
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
 <!--     <link rel="manifest" href="site.webmanifest"> -->
@@ -59,7 +59,7 @@ $(document).ready(function(){
 	
 	$('.mbtn').click(function(){
 		var mno = $(this).attr('id');
-		alert('############ ' + mno);
+		//alert('############ ' + mno);
 		$('#mno').val(mno);
 		$('#frm').attr('action', '/project/movie/movieDetail.project');
 		$('#frm').submit();
@@ -67,14 +67,18 @@ $(document).ready(function(){
 	
 	$('.gbtn').click(function(){
 		var gno = $(this).attr('id').substring(3);
-		alert('############ ' + gno);
+		//alert('############ ' + gno);
 		$('#gno').val(gno);
 		$('#frm').attr('action', '/project/movie/genreList.project');
 		$('#frm').submit();
 	});
 	
+	$('#outbtn').click(function(){
+		$(location).attr('href','http://localhost/project/member/logout.project');
+	});
+	
 	var arr = ${JDATA};
-	alert(arr[0]);
+	//alert(arr[0]);
 	for(var i = 0; i < arr.length; i++ ){
 		var cname = '.j' + arr[i];
 		$(cname).addClass('change');
@@ -138,7 +142,7 @@ $(document).ready(function(){
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="main.project">itcha</a>
+                                    <a href="/project/main.project">itcha</a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -147,15 +151,18 @@ $(document).ready(function(){
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="movielist.project">모든 영화</a></li>
-                                                <li><a href="main.project">검색</a></li>
+                                                <li><a href="/project/movie/movieList.project">모든 영화</a></li>
+                                                <li><a href="/project/main.project">검색</a></li>
                                                 <li><a href="#">공지사항</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="myPage.project" class="border-btn">마이페이지</a>
+                                        <a href="/project/member/myPage.project" class="border-btn">마이페이지</a>
+                                    </div>
+                                     <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <div class="border-btn" id="outbtn" >로그아웃</div>
                                     </div>
                                 </div>
                             </div> 

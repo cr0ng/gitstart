@@ -24,7 +24,7 @@ public class MemberSQL {
 		
 		case SEL_ID_INFO : 
 			buff.append("SELECT ");
-			buff.append("   user_no, user_id, user_name, nickname, gender, email, age  ");
+			buff.append("   user_no, user_id, user_name, nickname, gender, email, age ");
 			buff.append("FROM ");
 			buff.append("    member ");
 			buff.append("WHERE ");

@@ -44,15 +44,20 @@
 	.button:hover {
 		background-color: #E6E6FA;
 	}
+	
 </style>
 <script type="text/javascript">
 	$(document).ready(function(){
+		
+		$('#outbtn').click(function(){
+			$(location).attr('href','http://localhost/project/member/logout.project');
+		});
 		$('.hbtn').click(function(){
 			location.href='';
 		});
 		
 		$('#cbtn').click(function(){
-			location.href='commentList.jsp';
+			location.href='commentList.project';
 		});
 		
 		$('.mbtn').click(function(){
@@ -85,7 +90,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="main.jsp">itcha</a>
+                                    <a href="/project/main.project">itcha</a>
                                 </div>
                             </div>
                              <div class="col-xl-10 col-lg-10">
@@ -94,10 +99,13 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="movielist.jsp">모든 영화</a></li>
-                                                <li><a href="main.jsp">검색</a></li>
+                                                <li><a href="/project/movie/movieList.project">모든 영화</a></li>
+                                                <li><a href="/project/main.project">검색</a></li>
                                             </ul>
                                         </nav>
+                                    </div>
+                                    <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <div class="border-btn" id="outbtn" >로그아웃</div>
                                     </div>
                                   </div>
                             </div>
@@ -129,22 +137,22 @@
         <div class ="container" id= "frm" style="margin-top :50px; margin-bottom: 50px " >
         	<form action="#">
 				<div class="mt-10">
-					<input type="text" name="name" placeholder="NAME : ###" readonly class="single-input">
+					<input type="text" name="name" placeholder="NAME : 		${DATA.user_name}" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<input type="text" name="id" placeholder="ID : ###" readonly class="single-input">
+					<input type="text" name="id" placeholder="ID : 		${DATA.user_id}" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<input type="text" name="nickname" placeholder="NICKNAME : ###" readonly class="single-input">
+					<input type="text" name="nickname" placeholder="NICKNAME : 		${DATA.nickname }" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<input type="text" name="mail" placeholder="MAIL : ###" readonly class="single-input">
+					<input type="text" name="mail" placeholder="MAIL :		${DATA.email }" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<input type="text" name="gen" placeholder="GEN : ###" readonly class="single-input">
+					<input type="text" name="gen" placeholder="GEN :		 ${DATA.gender }" readonly class="single-input">
 				</div>
 				<div class="mt-10">
-					<input type="text" name="age" placeholder="AGE : ###" readonly class="single-input">
+					<input type="text" name="age" placeholder="AGE :		 ${DATA.age }" readonly class="single-input">
 				</div>
 				<div class="mt-10">
 					<input type="button" class="button" id="hbtn" value="찜보기">

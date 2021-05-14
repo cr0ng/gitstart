@@ -6,7 +6,7 @@
 <head>
 <meta charset="utf-8">
 <meta http-equiv="x-ua-compatible" content="ie=edge">
-<title>App landing | Template</title>
+<title>ITCHA</title>
 <meta name="description" content="">
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <link rel="shortcut icon" type="image/x-icon" href="/project/assets/img/favicon.ico">
@@ -38,7 +38,11 @@
 	}
 </style>
 <script type="text/javascript">
-	
+	$(document).ready(function(){
+		$('#outbtn').click(function(){
+			$(location).attr('href','http://localhost/project/member/logout.project');
+		});
+	});
 </script>
 </head>
 
@@ -71,8 +75,7 @@
 							<!-- Logo -->
 							<div class="col-xl-2 col-lg-2">
 								<div class="logo">
-									<a href="index.jsp"><img src="/project/assets/img/logo/logo.png"
-										alt=""></a>
+									<a href="/project/main.project">itcha</a>
 								</div>
 							</div>
 							<div class="col-xl-10 col-lg-10">
@@ -82,16 +85,19 @@
 									<div class="main-menu d-none d-lg-block">
 										<nav>
 											<ul id="navigation">
-												<li class="active"><a href="movieList.jsp">모든영화</a></li>
-												<li><a href="myPage.jsp">나의페이지</a></li>
-												<li><a href="main.jsp">검색</a></li>
+												 <li><a href="movieList.project">모든 영화</a></li>
+                                                <li><a href="/project/main.project">검색</a></li>
+                                                <li><a href="#">공지사항</a></li>
 											</ul>
 										</nav>
 									</div>
 									<!-- Header-btn -->
-									<div class="header-right-btn d-none d-lg-block ml-65">
-										<a href="myPage.jsp" class="border-btn">myPage</a>
-									</div>
+									 <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <a href="/project/member/myPage.project" class="border-btn">마이페이지</a>
+                                    </div>
+                                     <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <div class="border-btn" id="outbtn" >로그아웃</div>
+                                    </div>
 								</div>
 							</div>
 							<!-- Mobile Menu -->

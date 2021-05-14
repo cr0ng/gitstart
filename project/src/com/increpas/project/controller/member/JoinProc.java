@@ -34,6 +34,7 @@ public class JoinProc implements ProjController {
 		MemberDao mDao = new MemberDao();
 		int cnt = mDao.addMember(mVO);
 		System.out.println(cnt);
+		
 		String view = "/project/member/login.project";
 		if(cnt == 1) {
 			req.getSession().setAttribute("SID", sid);

@@ -20,17 +20,12 @@ public class MovieList implements ProjController {
 	@Override
 	public String exec(HttpServletRequest req, HttpServletResponse resp) {
 		String view = "movie/movieList";
-		/*
+		
 		String sid = (String) req.getSession().getAttribute("SID");
 		if(sid == null) {
 			req.setAttribute("isRedirect", true);
 			view = "/project/member/login.project";
 		}
-		*/
-		
-		// 추후 삭제
-		String sid = "yujin";
-		// --------------------------------------------------------
 		
 		String spage = req.getParameter("nowPage");
 		int nowPage = 1;

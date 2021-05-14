@@ -2,30 +2,8 @@
 <%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <!DOCTYPE html>
 <html>
-<style type="text/css">
-
-	#sdiv {
-		width : 1000px;
-	}
-	#search {
-		width: 800px; 
-		height: 50px;
-	}
-	#sbtn {
-		background-color: #6A5ACD;
-		color: white;
-		border: 2px solid #6A5ACD;
-		width : 100px;
-		height: 50px;
-	}
-	
-	#sbtn:hover {
-		background-color: white;
-		color: black;
-	}
-	
-</style>
 <head>
+
     <meta charset="utf-8">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title> ITCHA | main</title>
@@ -35,6 +13,8 @@
     <link rel="shortcut icon" type="image/x-icon" href="/project/assets/img/favicon.ico">
 
     <!-- CSS here -->
+    <link rel="stylesheet" type="text/css" href="/project/css/w3.css">
+	<link rel="stylesheet" type="text/css" href="/project/css/user.css">
     <link rel="stylesheet" href="/project/assets/css/bootstrap.min.css">
     <link rel="stylesheet" href="/project/assets/css/owl.carousel.min.css">
     <link rel="stylesheet" href="/project/assets/css/slicknav.css">
@@ -49,6 +29,52 @@
     <link rel="stylesheet" href="/project/assets/css/slick.css">
     <link rel="stylesheet" href="/project/assets/css/nice-select.css">
     <link rel="stylesheet" href="/project/assets/css/style.css">
+    <script type="text/javascript" src="/project/assets/js/jquery-3.6.0.min.js"></script>
+    
+    <style type="text/css">
+
+	#sdiv {
+		width : 1000px;
+	}
+	#search {
+		width: 800px; 
+		height: 50px;
+	}
+	#sbtn {
+		background-color: #9370DB;
+		color: white;
+		border: 2px solid black;
+		width : 100px;
+		height: 50px;
+	}
+	
+	#sbtn:hoveer{
+		background-color: #6495ED;
+	}
+	
+	
+</style>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$('#outbtn').click(function(){
+			$(location).attr('href','http://localhost/project/member/logout.project');
+		});
+		
+		$('#sbtn').click(function(){
+			var word = $(document.frm.search).val();
+			
+			if(!word){
+				alert('검색어가 입력되지 않았습니다.');
+				return;
+			}
+			
+			$('#frm').submit();
+		});
+		
+	});
+</script>
+
+    
 </head>
 <body>
   <!-- ? Preloader Start -->
@@ -73,7 +99,7 @@
                             <!-- Logo -->
                             <div class="col-xl-2 col-lg-2">
                                 <div class="logo">
-                                    <a href="main.jsp">itcha</a>
+                                    <a href="main.project">itcha</a>
                                 </div>
                             </div>
                             <div class="col-xl-10 col-lg-10">
@@ -82,13 +108,16 @@
                                     <div class="main-menu d-none d-lg-block">
                                         <nav>
                                             <ul id="navigation">                                                                                          
-                                                <li><a href="features.jsp">모든 영화</a></li>
+                                                <li><a href="movie/movieList.project">모든 영화</a></li>
                                             </ul>
                                         </nav>
                                     </div>
                                     <!-- Header-btn -->
+                                      <div class="header-right-btn d-none d-lg-block ml-65">
+                                        <a href="member/myPage.project" class="border-btn" id="mbtn" >마이페이지</a>
+                                    </div>
                                     <div class="header-right-btn d-none d-lg-block ml-65">
-                                        <a href="myPage.jsp" class="border-btn">마이페이지</a>
+                                        <div class="border-btn" id="outbtn" >로그아웃</div>
                                     </div>
                                 </div>
                             </div> 
@@ -112,17 +141,22 @@
                 <div class="single-slider slider-height">
                     <div class="container">
                         <div class="row justify-content-center">
+				         <form class="form-default" action="/project/movie/searchList.project" method="POST" id="frm" name="frm">
                             <div class="col-xl-8 col-lg-11 col-md-12">
                                 <div class="hero__caption text-center" id="sdiv">
                                     <h1 data-animation="bounceIn" data-delay="0.2s">영화를 검색해보세요!</h1>
-										<input type="text" placeholder="검색어 입력!"  name="search" id="search">
-										<button type="submit" class = "sbtn" id="sbtn">검색</button>
+                                    <div>
+										<input type="text" placeholder="영화 제목을 입력하세요"  name="search" id="search">
+										<div class="w3-padding w3-center w3-right" id="sbtn">검색</div>
+                                    </div>
                                 </div>
                             </div>
+				        </form>
                         </div>
                     </div>          
                 </div>
         </div>
+        </section>
     </main>
     
     <footer>
